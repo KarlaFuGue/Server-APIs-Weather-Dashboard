@@ -5,9 +5,9 @@ AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 <!--Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")-->
-- I created this basic dashboar to practice the use of APIs and AJAX calls to get data, provided from different sources/applications.
+- I created this basic dashboard to practice the use of APIs and AJAX calls to get data, provided from different sources/applications.
 <!--What problem does it solve?-->
--This basic Weather Dashboard, presents the current and future weather conditions for the user's requested city, and the city will kept add to the search    history.
+- This basic Weather Dashboard, presents the current and future weather conditions for the user's requested city, and the city will kept add to the search    history.
 
 ## Installation
 
