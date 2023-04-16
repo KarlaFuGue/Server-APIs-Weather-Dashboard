@@ -1,19 +1,27 @@
-$( document ).ready(function() {
-    var appID = "098eca82700d1dca25bbbf3a0c5e9487";
+var city;
+var wConditions = $(".card-body");
+getItems();
 
-    $(".query_btn").click(function(){
-        var query_param = $(this).prev().val();
+function getData() {
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=098eca82700d1dca25bbbf3a0c5e9487"
+    wConditions.empty();
+    $("#prediction").empty();
 
-        if ($(this).prev().attr("placeholder") == "City") {
-            var weather = "http://api.openweathermap.org/data/2.5/weather?q=" + query_param + "&APPID=" + appID;
-        } else if ($(this).prev().attr("placeholder") == "Zip Code") {
-            var weather = "http://api.openweathermap.org/data/2.5/weather?zip=" + query_param + "&APPID=" + appID;
-        }
-        $.getJSON(weather,function(json){
-            $("#city").html(json.name);
-            $("#main_weather").html(json.weather[0].main);
-            $("#description_weather").html(json.weather[0].description);
-            
-        });
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+        var date = moment().format(" DD/MM/YYYY");
+        var iconCode = response.weather[0].icon;
+        var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        var name = $("<h3>").html(city + date);
+        wConditions.prepend(name);
+        wConditions.append($("<img>").attr("src", iconURL));
+        var temp = response.main.temp - 273.15;
+        wConditions.append($("<p>").html("Temperature: " + temp.toFixed(1) + " °C"));
+        var humidity = response.main.humidity;
+        wConditions.append($("<p>").html("Humidity: " + humidity + "%"));
+        var windSpeed = response.wind.speed;
+        wConditions.append($("<p>").html("Wind Speed: " + windSpeed + " KPH"));
     })
-});
+};
