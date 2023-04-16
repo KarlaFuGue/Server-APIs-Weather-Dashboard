@@ -55,12 +55,9 @@ SOFTWARE.
 
 
 ## Languages
-HTML
-CSS
-JavaScript
-jQuery
-Bootstrap
-w3school:font awesome
+- xxxx
+- xxxx
+- xxxx
 
 
 [def]: PLANNER.png
