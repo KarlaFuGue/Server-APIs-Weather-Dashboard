@@ -28,6 +28,7 @@ This application run in the browser, so no installation needed.
 
 - Karla Fuentes Guerrero: https://github.com/KarlaFuGue
 - Design: https://getbootstrap.com/docs/4.6/getting-started/introduction/
+- Weather API: https://openweathermap.org/api
 
 ## License
 
