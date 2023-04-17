@@ -1,0 +1,48 @@
+header {
+    margin-top: 2rem;
+    max-width: 1400px;
+    background: linear-gradient(#0B2559,#183B59,#2A5159);
+}
+
+form {
+    border: 1px solid rgba(0,0,0,.125);;
+}
+.form-inline {
+    display: flex;
+    justify-content: center;
+}    
+.list-group-item {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #61727C !important;
+    border-radius: 10px 10px 10px 10px;
+
+}
+.list-group-item-action {
+    color: azure;
+}   
+.bg-primary {
+    margin-right: 3px;
+    background-color: #5D8679 !important;
+    border: 1px solid rgba(0,0,0,.125);
+} 
+.card {
+    width: 100%;
+}
+#search-input {
+    border-radius: 10px;
+    margin-right: 3px;
+    margin-top: 1px;
+}
+
+#form-heading {
+    margin-top: 2rem;
+
+}
+
+#search-button {
+    background-color: #0897B4;
+    border: 2px solid #61727C;
+    border-radius: 10px;
+    margin-left: 1px;
+}
