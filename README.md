@@ -22,7 +22,8 @@ This application run in the browser, so no installation needed.
 5. Cities' search history is shown on the left side of the screen.
 
 
-    ![image](XXX.png)
+![image](assets/APP.png)
+
 
 ## Credits
 
@@ -43,6 +44,5 @@ Copyright (c) [2023] [KarlaFuentesGuerrero]
 - Jquery
 - Bootstrap
 - API
-
-
-[def]: PLANNER.png
+- Moment js
+- Adobe color
